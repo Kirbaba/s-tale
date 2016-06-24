@@ -248,3 +248,28 @@
   float: left;
   width: 100%;
 }
+
+@media only screen and (max-width: 980px) {
+  .site-container {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 10px;
+  }
+
+  .questionary__staps_iconbox {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+
+  .questionary__staps_icon {
+    margin: 15px 25px;
+  }
+
+  .questionary__staps_icon:after {
+    content: none;
+  }
+}
