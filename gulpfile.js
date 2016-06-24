@@ -49,26 +49,32 @@ gulp.task('sass', function() { // Создаем таск Sass
     var processors = [
         assets,
         short,
+        stylefmt       
+    ];
+    return gulp.src('app/sass/**/*.scss')        
+        .pipe(sass().on('error', sass.logError))
+        .pipe(postcss(processors))             
+        .pipe(gulp.dest('app/css'))
+});
+
+gulp.task('css-concat', function () {
+    var processors = [
+        assets,
+        short,
         autoprefixer(['last 5 versions', '> 5%', 'ie 8', 'ie 7'], {
             cascade: true
-        }),
-        pxtorem({
-            rootValue: 14,
-            replace: false
         }),
         focus,
         stylefmt,
         cssnano
     ];
-    return gulp.src('app/sass/**/*.scss')
-        .pipe(sourcemaps.init())
-        .pipe(sass().on('error', sass.logError))
+    return gulp.src('app/css/**/*.css')
         .pipe(postcss(processors))
+        .pipe(concat('style.css'))
         .pipe(rename({
             suffix: ".min",
             extname: ".css"
         }))
-        .pipe(sourcemaps.write('.', { sourceRoot: 'css-source' }))
         .pipe(gulp.dest('css'))
         .pipe(browserSync.reload({
             stream: true
@@ -78,7 +84,7 @@ gulp.task('sass', function() { // Создаем таск Sass
 gulp.task('browser-sync', function() { // Создаем таск browser-sync
     browserSync({ // Выполняем browserSync
         proxy: {
-            target: '' // Директория для сервера - app
+            target: 's-tale' // Директория для сервера - app
         },
         ghostMode: {
             clicks: true,
@@ -113,6 +119,7 @@ gulp.task('extend', function () {
 gulp.task('watch', ['browser-sync', 'compress'], function() {
     gulp.watch('app/img/**/*', ['img']);
     gulp.watch('app/sass/**/*.scss', ['sass']); // Наблюдение за sass файлами в папке sass
+    gulp.watch('app/css/**/*.css', ['css-concat']); // Наблюдение за sass файлами в папке sass
     gulp.watch(['./app/html/*.html'], ['extend']);
     gulp.watch('./**/*.html', browserSync.reload); // Наблюдение за HTML файлами в корне проекта
     gulp.watch('app/js/*', function() {

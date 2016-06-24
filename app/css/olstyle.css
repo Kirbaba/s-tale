@@ -1,0 +1,12 @@
+.right-part.mapol{
+    height: 285px;
+}
+
+.city ul{
+    display: none;
+}
+
+.city li a{
+    font-size: 10px !important;
+    line-height: 18px; 
+}

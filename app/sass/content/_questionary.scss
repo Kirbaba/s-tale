@@ -1,0 +1,150 @@
+.questionary {
+	&__form {
+		h3 {
+			text-align: center;
+			font-size: 50px;
+			font-weight: 900;
+			font-family: 'Arial';
+			margin-top: 25px;
+		}
+		&_box {
+			position: relative;
+			float: left;
+			width: 100%;
+			-webkit-box-sizing: border-box;
+			   -moz-box-sizing: border-box;
+			        box-sizing: border-box;
+			padding: 50px 20px 40px;
+			background-color: #1f0d25;
+			@include box-shadow(0 0 28px 4px rgba(0,0,0,.75));
+
+			&:before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				float: left;
+				width: 100%;
+				height: 50px;
+				background-color: #17A79E;
+				background-position: 50% 0;
+		        box-shadow: inset 0 -10px 10px 0 rgba(0,0,0,.3);
+		        margin-bottom: 15px;
+			}
+		}
+		&_group {
+			float: left;
+			width: 100%;
+			margin-bottom: 10px;
+			font-family: 'Arial';
+		}
+		&_title {
+			float: left;
+			width: 40%;
+			text-align: right;
+			font-size: 30px;
+			font-weight: bold;
+			-webkit-box-sizing: border-box;
+			   -moz-box-sizing: border-box;
+			        box-sizing: border-box;
+			padding: 0 10px;
+		}
+		&_inp {
+			float: right;
+			width: 60%;
+			height: 41px;
+			-webkit-box-sizing: border-box;
+			   -moz-box-sizing: border-box;
+			        box-sizing: border-box;
+			padding: 0 10px;
+			font-size: 30px;
+			font-weight: bold;
+			font-family: 'Arial';
+			background-color: rgba(167, 167, 167, .5);
+			outline: none;
+			color: #fff;
+			border: 2px solid #fff;
+			&::-webkit-input-placeholder { color: #bab7bb; }
+			&::-moz-placeholder { color: #bab7bb; } /* firefox 19+ */
+			&:-ms-input-placeholder { color: #bab7bb; } /* ie */
+			input:-moz-placeholder { color: #bab7bb; }	
+		}
+		&_sub {
+			display: block;
+			margin: 25px auto 0;
+			text-transform: uppercase;
+			font-size: 30px;
+			font-weight: bold;
+			width: 242px;
+			height: 60px;
+			background-color: #91007b;
+			font-weight: 900;
+			font-family: 'Arial';
+			outline: none;
+			border: none;
+			color: #FFF;
+			&:hover {
+				background-color: lighten(#91007B,10%);
+			}
+		}
+	}
+	&__staps {
+		p {
+			text-align: center;
+			text-transform: uppercase;
+			font-weight: 800;
+			font-family: 'Arial';
+			font-size: 24px;
+		}
+		&_iconbox {
+			float: left;
+			display: flex;
+			-webkit-flex-direction: row;
+			    -ms-flex-direction: row;
+			        flex-direction: row;
+			width: 100%;
+			margin-bottom: 30px;
+			-webkit-justify-content: space-between;
+			        justify-content: space-between;
+		}
+		&_icon {
+			display: block;
+			position: relative;
+			width: 153px;
+			height: 153px;
+			@include border-radius(76px);
+			border: 2px solid #fff;
+			text-align: center;
+			margin-bottom: 15px;
+			img {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				-webkit-transform: translate(-50%, -50%);
+				   -moz-transform: translate(-50%, -50%);
+				    -ms-transform: translate(-50%, -50%);
+				     -o-transform: translate(-50%, -50%);
+				        transform: translate(-50%, -50%);
+			}
+			&:after {
+				content: "";
+				position: absolute;
+				size: 80px 66px;
+				top: 50%;
+				right: -70px;
+				-webkit-transform: translateY(-50%);
+				   -moz-transform: translateY(-50%);
+				    -ms-transform: translateY(-50%);
+				     -o-transform: translateY(-50%);
+				        transform: translateY(-50%);
+				background-image: url('../img/icons/Down-104.png');
+			}
+			&:last-of-type {
+				&:after {
+					content: none;
+				}
+			}
+		}
+	}
+}

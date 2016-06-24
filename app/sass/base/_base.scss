@@ -1,51 +1,58 @@
-body {
-  
-}
-
-%clearfix {
-  *zoom: 1;
-  &:after {
-    content: '';
-    display: table;
-    line-height: 0;
-    clear: both;
-  }
-}
-
-a {
-	text-decoration: none;
-	&:hover, &:focus, &:active{
-		outline: none;
-	}
-}
-
-ul {
-	list-style-type: none;
-}
-
-.container {
-  padding-right: 10px;
-  padding-left: 10px;
-  margin-right: auto;
-  margin-left: auto;
+.block-magenta {
+  float: left;
   position: relative;
+  width: 100%;
+  padding: 45px 0;
+  background-color: #1F0D25;
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    background: url('../img/bg/magenta-border.png');
+    height: 155px;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    z-index: 10;
+  }
 }
 
-.container {
-  @extend %clearfix;
-}
-@media (min-width: 768px) {
-  .container {
-    width: 766px;
+.block-blue {
+  float: left;
+  width: 100%;
+  position: relative;
+  background-color: #130727;
+  padding-top: 155px + 45px;
+  padding-bottom: 45px;
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    background: url('../img/bg/arr-e.png');
+    height: 137px;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    z-index: 12;
   }
 }
-@media (min-width: 992px) {
-  .container {
-    width: 990px;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    width: 990px;
-  }
+
+.block-skyline {
+  float: left;
+  width: 100%;
+  height: 500px;
+  background-image: url('../img/bg/bg-3.jpg');
+  background-position: 50% 90%;
+  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  background-attachment: fixed;
 }
