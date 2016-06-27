@@ -86,6 +86,16 @@
 	.gallery__previews_item {
 		width: 50%;
 	}
+	.contacts__head {
+		height: 250px;
+	}
+	.contacts__map {
+		width: 100%;
+	}
+	.contacts__info {
+		width: 100%;
+		padding-left: 0;
+	}
 }
 
 @media only screen and (max-width: 500px) {

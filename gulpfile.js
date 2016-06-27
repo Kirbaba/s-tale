@@ -9,7 +9,7 @@ var gulp = require('gulp'), // Подключаем Gulp
     pngquant = require('imagemin-pngquant'), // Подключаем библиотеку для работы с png
     cache = require('gulp-cache'); // Подключаем библиотеку кеширования
     extender = require('gulp-html-extend'),
-    var gulpUtil = require('gulp-util'),
+    gulpUtil = require('gulp-util'),
     sourcemaps = require('gulp-sourcemaps');
 
 var postcss = require('gulp-postcss'),
@@ -104,7 +104,7 @@ gulp.task('compress', function() {
       suffix: ".min",
       extname: ".js"
   }))
-  .pipe(uglify().on('error', gulpUtil.log)))
+  .pipe(uglify().on('error', gulpUtil.log))
   .pipe(sourcemaps.write('', { sourceRoot: 'js-source' }))
   .pipe(gulp.dest('js'));
 
