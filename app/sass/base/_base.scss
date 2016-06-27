@@ -19,6 +19,16 @@
     background-size: 100% 100%;
     z-index: 10;
   }
+  h3 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+    font-family: 'Arial';
+    margin-top: 25px;
+  }
+  h4{
+    text: #a6a3a7 center bold 30px;
+  }
 }
 
 .block-blue {
@@ -55,4 +65,10 @@
        -o-background-size: cover;
           background-size: cover;
   background-attachment: fixed;
+}
+
+.float-box {
+  float: left;
+  width: 100%;
+  position: relative;
 }

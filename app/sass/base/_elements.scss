@@ -1,0 +1,61 @@
+.icon {
+	display: inline-block;
+	-webkit-background-size: contain;
+	     -o-background-size: contain;
+	        background-size: contain;
+	 
+	&-dots {
+		width: 88px;
+		height: 24px;
+		background-image: url('../img/icons/More-Filled-100.png');
+	}
+	&-phone {
+		size: 68px;
+		background-image: url('../img/icons/PhoneFilled-100.png');
+	}
+	&-chat {
+		width: 71px;
+		height: 66px;
+		background-image: url('../img/icons/Chat-104.png');
+	}
+	&-write {
+		width: 68px;
+		height: 62px;
+		background-image: url('../img/icons/MapEditingFilled-100.png');
+	}
+}
+
+.wall{
+  display:block;
+  position:relative;
+  &-column{
+    display:block;
+    position:relative;
+    width:33.333333%;
+    float:left;
+    padding: 0;
+    box-sizing:border-box;
+    
+    &:first-child{
+      padding-right:12px;
+    }
+    & ~.wall-column{
+      padding-left:12px;
+      padding-right:12px;
+    }
+    &:last-of-type{
+      padding-right:0;
+    }
+    
+    @media (max-width:640px){
+      width:50%;
+    }
+    
+    @media (max-width:480px){
+      width:auto;
+      float:none;
+      padding:0;
+    }
+    
+  }
+}

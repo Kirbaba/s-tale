@@ -25,11 +25,34 @@
 }
 
 @media only screen and (max-width: 770px) {
-	
+	.section-review .right-part {
+		width: 560px;
+	}
 }
 
 @media only screen and (max-width: 736px) {
-	
+	.section-review .right-part {
+		width: 100%;
+	}
+	.block-skyline {
+		height: 250px;
+		background-attachment: initial;
+	}
+	.styling-request {
+		background-attachment: initial;
+	}
+	.block-magenta h4 {
+		font-size: 24px;
+	}
+	.questionary__form_inp, .questionary__form_title {
+		float: left;
+		width: 100%;
+		text-align: left;
+		font-size: 18px;
+	}
+	.questionary__staps p {
+		font-size: 18px;
+	}
 }
 
 @media only screen and (max-width: 500px) {
