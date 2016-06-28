@@ -35,4 +35,20 @@
 	&_item {
 		color: #5E23C0;
 	}
+	&__links {
+		text-align: center;
+		padding-top: 100px;
+		&_item {
+			display: inline-block;
+			margin: 15px 70px;
+			@include transition(.3s);
+			&:hover {
+				-webkit-transform: scale(0.95);
+				   -moz-transform: scale(0.95);
+				    -ms-transform: scale(0.95);
+				     -o-transform: scale(0.95);
+				        transform: scale(0.95);
+			}
+		}
+	}
 }
