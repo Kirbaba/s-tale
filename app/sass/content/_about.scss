@@ -1,0 +1,80 @@
+.about {
+	&-info {
+		&__content {
+			text-align: center;
+			color: #FFF;
+			&_toggle {
+				font-family: "Arial";
+				text: #fff 900 uppercase  30px;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+			p {
+				font-family: "Arial";
+				text: 900 24px;
+			}
+			&_all {
+				display: none;
+			}
+		}
+	}
+	&-masterpieces {
+		&__carousel {
+			float: left;
+			width: 100%;
+			position: relative;
+			&_item {
+				float: left;
+				width: 100%;
+				-webkit-box-sizing: border-box;
+				   -moz-box-sizing: border-box;
+				        box-sizing: border-box;
+				padding: 0 10px;
+			}
+			
+		
+		}
+
+	}
+	&-exhibition {
+		float: left;
+		width: 100%;
+		position: relative;
+		background-color: #13100E;
+		padding: 45px 0 150px;
+		h3 {
+			text-align: center;
+			font-size: 50px;
+			font-weight: 900;
+			font-family: 'Arial';
+			margin-top: 25px;
+			line-height: .8;
+		}
+	}
+}
+
+
+ 
+.about-masterpieces .about-masterpieces__carousel .owl-prev,
+.about-exhibition .about-exhibition__carousel .owl-prev {
+	background: none !important;
+	size: 79px!important;
+	left: 10px !important;
+	opacity: 0!important;
+	&:hover {
+		opacity: 1 !important;
+	}
+}
+
+.about-masterpieces .about-masterpieces__carousel .owl-next,
+.about-exhibition .about-exhibition__carousel .owl-next {
+	background: none !important;
+	size: 79px!important;
+	opacity: 0;
+	/* right: 10px !important; */
+	opacity: 0!important;
+	&:hover {
+		opacity: 1 !important;
+	}
+}

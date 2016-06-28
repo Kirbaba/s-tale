@@ -41,6 +41,14 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
+  &-slide-prev {
+    size: 79px;
+    background-image: url('../img/icons/arr-slider-l.png');
+  }
+  &-slide-next {
+    size: 79px;
+    background-image: url('../img/icons/arr-slider.png');
+  }
 }
 
 .wall{
