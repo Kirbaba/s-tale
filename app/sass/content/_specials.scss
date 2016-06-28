@@ -1,0 +1,40 @@
+.specials {
+	&__column {
+		width: 1 / 3 * 100%;
+		text-align: center;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+		padding: 0 20px;
+		&:nth-of-type(2) {
+			border-width: 0 1px;
+			border-color: #FFF;
+			border-style: solid;
+		}
+		h4 {
+			text: #fff  24px;
+		}
+
+	}
+	&__item {
+		text-align: left;
+		margin-bottom: 25px;
+		a {
+			text-decoration: none;
+			strong {
+				text: #fff 900 18px;
+			}
+			&:hover {
+				text-decoration: underline;
+				color: #FFF;
+			}
+		}
+		&_thumb {
+			width: 100%;
+			height: 180px;
+			object-fit: cover;
+			object-position: 50%;
+			margin-bottom: 10px;
+		}
+	}
+}
