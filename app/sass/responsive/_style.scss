@@ -49,6 +49,10 @@
 		        background-size: contain;
 	    background-position: 50% 50%;
 	}
+	.price__item, .price__wrap {
+		-webkit-justify-content: center;
+		        justify-content: center;
+	}
 }
 
 @media only screen and (max-width: 770px) {
@@ -96,10 +100,27 @@
 		width: 100%;
 		padding-left: 0;
 	}
+	.about-info__content_toggle {
+		font-size: 24px;
+	}
 }
 
 @media only screen and (max-width: 500px) {
-	
+	.block-magenta h3 {
+		font-size: 40px;
+	}
+	.about-info__content p {
+		font-size: 18px;
+	}
+	.block-black h3 {
+		font-size: 40px;
+	}
+	.block-dark h3 {
+		font-size: 40px;
+	}
+	.about-exhibition h3 {
+		font-size: 40px;
+	}
 }
 
 @media only screen and (max-width: 320px) {
