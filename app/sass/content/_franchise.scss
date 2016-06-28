@@ -1,0 +1,52 @@
+.franchise {
+	text-align: center;
+	&__carousel {
+		float: left;
+		width: 100%;
+		position: relative;
+		margin-bottom: 25px;
+		img {
+			width: 100%;
+		}
+		.owl-next {
+			background: none !important;
+			size: 79px!important;
+			&:hover {
+				opacity: 1 !important;
+			}
+		}
+		.owl-prev {
+			background: none !important;
+			size: 79px!important;
+			&:hover {
+				opacity: 1 !important;
+			}
+		}
+	}
+	&_btn {
+		display: inline-block;
+		text: #FFF 900 uppercase 24px;
+		padding: 20px 10px;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+		margin: 25px 0;
+		background-color: #91007B;
+		@include transition(.3s);
+		text-decoration: none;
+		&:hover {
+			background-color: darken(#91007B, 10%);
+		}
+	}
+}
+
+.about-exhibition .about-exhibition__carousel .owl-next {
+	background: none !important;
+	size: 79px!important;
+	opacity: 0;
+	/* right: 10px !important; */
+	opacity: 0!important;
+	&:hover {
+		opacity: 1 !important;
+	}
+}

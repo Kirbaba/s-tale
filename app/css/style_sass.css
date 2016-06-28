@@ -199,6 +199,18 @@
   background-image: url("../img/icons/arr-slider.png");
 }
 
+.icon-presentation-prev {
+  width: 44px;
+  height: 64px;
+  background-image: url("../img/icons/Fast-Forward-104-l-1.png");
+}
+
+.icon-presentation-next {
+  width: 44px;
+  height: 64px;
+  background-image: url("../img/icons/Fast-Forward-104-r.png");
+}
+
 .wall {
   display: block;
   position: relative;
@@ -1174,6 +1186,79 @@
   margin-bottom: 10px;
 }
 
+.franchise {
+  text-align: center;
+}
+
+.franchise__carousel {
+  float: left;
+  width: 100%;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.franchise__carousel img {
+  width: 100%;
+}
+
+.franchise__carousel .owl-next {
+  background: none !important;
+  width: 79px !important;
+  height: 79px !important;
+}
+
+.franchise__carousel .owl-next:hover {
+  opacity: 1 !important;
+}
+
+.franchise__carousel .owl-prev {
+  background: none !important;
+  width: 79px !important;
+  height: 79px !important;
+}
+
+.franchise__carousel .owl-prev:hover {
+  opacity: 1 !important;
+}
+
+.franchise_btn {
+  display: inline-block;
+  color: #fff;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 24px;
+  padding: 20px 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 25px 0;
+  background-color: #91007b;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  text-decoration: none;
+}
+
+.franchise_btn:hover {
+  background-color: #5e0050;
+}
+
+.about-exhibition .about-exhibition__carousel .owl-next {
+  background: none !important;
+  width: 79px !important;
+  height: 79px !important;
+  opacity: 0;
+
+  /* right: 10px !important; */
+  opacity: 0 !important;
+}
+
+.about-exhibition .about-exhibition__carousel .owl-next:hover {
+  opacity: 1 !important;
+}
+
 .footer-wrapper {
   float: left;
   width: 100%;
@@ -1321,6 +1406,26 @@
 
   .specials__column:nth-of-type(2) {
     border: none;
+  }
+
+  .franchise__carousel .owl-next {
+    right: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .franchise__carousel .owl-prev {
+    left: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .franchise_btn {
+    font-size: 18px;
+  }
+
+  .franchise {
+    padding-top: 50px;
   }
 }
 
