@@ -1,0 +1,51 @@
+.cooperation {
+	text-align: center;
+	&__item {
+		width: 300px;
+		height: 421px;
+		background-color: rgba(0, 0, 0, .5);
+		-webkit-border-radius: 30px;
+		        border-radius: 30px;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+		padding: 15px 10px;
+		font-family: 'Arial';
+		margin: 0 8px 25px;
+		text-align: left;
+		&_icon {
+			width: 100%;
+			height: 150px;
+			object-fit: contain;
+			object-position: 50%;
+			-webkit-box-sizing: border-box;
+			   -moz-box-sizing: border-box;
+			        box-sizing: border-box;
+			padding: 15px 25px;
+		}
+		h4 {
+			text: #fff 900 uppercase  18px;
+			margin-bottom: 10px;
+		}
+		p {
+			text: bold center 18px 1;
+		}
+	}
+	&__partner-but {
+		display: inline-block;
+		text: #fff 900 uppercase 50px;
+		text-decoration: none;
+		margin: 50px 0;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+		padding: 25px;
+		background-color: #91007B;
+		-webkit-border-radius: 30px;
+		        border-radius: 30px;
+		@include transition(.3s);
+		&:hover {
+			background-color: darken(#91007B, 10%);
+		}
+	}
+}
