@@ -1259,6 +1259,70 @@
   opacity: 1 !important;
 }
 
+.project__slider {
+  height: auto;
+  position: relative;
+  background-color: #1f0d25;
+}
+
+.project ul.slides {
+  height: 100%;
+}
+
+.project__carousel {
+  margin-bottom: 25px;
+}
+
+.project__carousel .slides li {
+  height: 140px;
+}
+
+.project__carousel .slides li img {
+  height: 140px;
+  object-fit: cover;
+  object-position: 50%;
+}
+
+.project__carousel .flex-direction-nav .flex-next {
+  right: 10px;
+  width: 45px;
+  height: 78px;
+  background: url("../img/icons/Next-96-1.png");
+}
+
+.project__carousel .flex-direction-nav .flex-prev {
+  left: 10px;
+  width: 45px;
+  height: 78px;
+  background: url("../img/icons/Next-96.png");
+}
+
+.project__media {
+  padding-top: 50px;
+}
+
+.project__media_videobox {
+  float: left;
+  width: 100%;
+  height: auto;
+  margin: 25px 0;
+  height: 560px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.project__content {
+  font-family: "Calibri";
+}
+
+.project__content p {
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 700;
+  text-align: center;
+}
+
 .footer-wrapper {
   float: left;
   width: 100%;
@@ -1426,6 +1490,21 @@
 
   .franchise {
     padding-top: 50px;
+  }
+
+  .project__media_videobox {
+    height: 320px;
+  }
+
+  .project__slider .slides img {
+    min-height: 300px;
+    max-height: 376px;
+    width: auto;
+    max-width: none;
+  }
+
+  .project__content p {
+    font-size: 18px;
   }
 }
 

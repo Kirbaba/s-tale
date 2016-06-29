@@ -134,6 +134,24 @@
 	.franchise { 
 		padding-top: 50px;
 	}
+	.project__media_videobox {
+		height: 320px;
+	}
+	.project__slider {
+		.slides {
+			img {
+				min-height: 300px; 
+				max-height: 376px;
+				width: auto;
+				max-width: none;
+			}
+			
+		}
+	   
+	}
+	.project__content p {
+		font-size: 18px;
+	}
 }
 
 @media only screen and (max-width: 500px) {

@@ -1,0 +1,54 @@
+.project {
+	&__slider {
+		height: auto;
+		position: relative;
+		background-color: #1F0D25;
+	}
+	ul.slides {
+		height: 100%;
+	}
+	&__carousel {
+		margin-bottom: 25px;
+		 .slides li {
+		 	height: 140px;
+		 	img {
+		 		height: 140px;
+		 		object-fit: cover;
+		 		object-position: 50%;
+		 	}
+		 }
+		 .flex-direction-nav .flex-next {
+		 	right: 10px;
+		 	width: 45px;
+			height: 78px;
+			background: url('../img/icons/Next-96-1.png');
+		 }
+		 .flex-direction-nav .flex-prev {
+		 	left: 10px;
+		 	width: 45px;
+			height: 78px;
+			background: url('../img/icons/Next-96.png');
+		 }
+	}
+	&__media {
+		padding-top: 50px;
+		&_videobox {
+			float: left;
+			width: 100%;
+			height: auto;
+			margin: 25px 0;
+			height: 560px;
+			-webkit-box-sizing: border-box;
+			   -moz-box-sizing: border-box;
+			        box-sizing: border-box;
+		}
+	}
+	&__content {
+		font-family: "Calibri";
+		p {
+			text: 30px italic bold center 1; 
+		}
+		
+		
+	}
+}
