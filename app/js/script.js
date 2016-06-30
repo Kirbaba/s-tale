@@ -9,4 +9,15 @@ jQuery(document).ready(function($) {
 			$('.about-info__content_all').slideUp("slow");
 		}
 	});
+
+
+});
+
+$(window).scroll(function () {
+	if (window.pageYOffset > 50) {
+
+			$(".header-bottom").addClass("header-bottom--onScroll");
+	} else {
+			$(".header-bottom").removeClass("header-bottom--onScroll");
+	}
 });

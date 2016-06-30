@@ -259,6 +259,31 @@
   height: 110px;
 }
 
+.header-wrapper .header-bottom {
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  top: 50px;
+}
+
+.header-wrapper .header-bottom--onScroll {
+  position: fixed;
+  top: 0;
+  padding: 20px 0;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  z-index: 99999;
+}
+
+.header-wrapper {
+  z-index: 9 !important;
+}
+
 .home__bg-map {
   float: left;
   width: 100%;

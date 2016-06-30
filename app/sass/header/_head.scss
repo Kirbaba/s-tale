@@ -4,3 +4,20 @@
 	background-color: #000;
 	height: 110px;
 }
+
+.header-wrapper .header-bottom {
+	@include transition(.3s);
+	top: 50px;
+}
+
+.header-wrapper .header-bottom--onScroll {
+		position: fixed;
+		top: 0;
+		padding: 20px 0;
+		@include transition(.3s);
+		z-index: 99999;
+}
+
+.header-wrapper {
+	z-index: 9!important;	
+}
