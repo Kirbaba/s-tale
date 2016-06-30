@@ -259,6 +259,16 @@
   height: 110px;
 }
 
+.home__bg-map {
+  float: left;
+  width: 100%;
+  height: 510px;
+}
+
+.content-wrapper .section-fran:before {
+  z-index: 9;
+}
+
 .questionary__form_box {
   position: relative;
   float: left;

@@ -12,6 +12,8 @@
 
 })(jQuery);
 
+var main_location_vert = 55.7498598;
+var main_location_hor = 37.3523236;
 
 function initMap(lat, lng, zoom) {
 
@@ -25,6 +27,19 @@ function initMap(lat, lng, zoom) {
         center: {lat: lat, lng: lng},
         mapTypeControl: false,
         scrollwheel: false,
+    });
+
+    var mapOptions = {
+        center: new google.maps.LatLng(main_location_vert, main_location_hor),
+        zoom: 13,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        scrollwheel: false
+    };
+    var map_bg = new google.maps.Map(document.getElementById("bg_map"), mapOptions);
+
+    var bg_marker = new google.maps.Marker({
+        position: new google.maps.LatLng(main_location_vert, main_location_hor),
+        map: map_bg
     });
 
     map.data.setStyle(function (feature) {
@@ -49,12 +64,13 @@ function initMap(lat, lng, zoom) {
     ]
 
     map.setOptions({styles: styles});
+    map_bg.setOptions({styles: styles});
 }
 
 objects = [
     ["Москва,ул. Согласия, 7", "55.6142804", "37.563635"],
     ["Москва,пл. Победы, 2", "55.7536093", "37.3526962"],
-    ["Санкт-Петербург", "59.9174925", "30.0448779"],    
+    ["Санкт-Петербург", "59.9174925", "30.0448779"],
     ["Калининград, ул. Согласия, 7", "54.7419887", "20.4908873"],
     ["Калининград, пл. Победы, 2", "54.719379", "20.4975536"],
     ["Саратов", "51.5343656", "45.7299543"],
