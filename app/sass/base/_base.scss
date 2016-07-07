@@ -115,6 +115,13 @@
   }
 }
 
+a {
+  text-decoration: none!important;
+  &:hover {
+    text-decoration: none!important;
+  }
+}
+
 .float-box {
   float: left;
   width: 100%;
