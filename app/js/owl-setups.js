@@ -7,8 +7,8 @@ jQuery(document).ready(function($) {
 	      navigationText : false,
       });
 
-  jQuery(".about-masterpieces__carousel").owlCarousel({        
-      navigation : false, 
+  jQuery(".about-masterpieces__carousel").owlCarousel({
+      navigation : false,
       items : 3,
       slideSpeed : 1000,
       paginationSpeed : 400,
@@ -24,8 +24,8 @@ jQuery(document).ready(function($) {
 
   });
 
-  jQuery(".about-exhibition__carousel").owlCarousel({        
-      navigation : false, 
+  jQuery(".about-exhibition__carousel").owlCarousel({
+      navigation : false,
       items : 3,
       slideSpeed : 1000,
       paginationSpeed : 400,
@@ -41,7 +41,7 @@ jQuery(document).ready(function($) {
 
   });
 
-	jQuery(".franchise__carousel").owlCarousel({        
+	jQuery(".franchise__carousel").owlCarousel({
       navigation : true, // Show next and prev buttons
         slideSpeed : 300,
         pagination : false,

@@ -10,8 +10,28 @@ jQuery(document).ready(function($) {
 		}
 	});
 
+	$('.sub').click(function(event) {
+		event.preventDefault();
+		$('.sub__box').toggle();
+		if($('.mail__box').length !=0) {
+			$('.mail__box').hide();
+		}
+	});
 
+
+
+	$('.mail').click(function(event) {
+		event.preventDefault();
+			$('.mail__box').toggle();
+		if($('.sub__box').length !=0) {
+			$('.sub__box').hide();
+		}
+
+	});
 });
+
+
+
 
 $(window).scroll(function () {
 	if (window.pageYOffset > 50) {

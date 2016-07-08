@@ -288,8 +288,126 @@ a:hover {
   z-index: 99999;
 }
 
-.header-wrapper {
-  z-index: 9 !important;
+.sub {
+  position: relative;
+}
+
+.sub__wrap,
+.mail__wrap {
+  float: left;
+  position: relative;
+}
+
+.sub__box,
+.mail__box {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 250px;
+  background-color: #bbb;
+  box-sizing: border-box;
+  padding: 15px;
+  z-index: 999;
+  margin-top: 10px;
+}
+
+.sub__box:before,
+.mail__box:before {
+  content: "";
+  position: absolute;
+  background: none;
+  z-index: 9;
+  right: 15px;
+  top: -8px;
+  width: 0;
+  left: initial;
+  border-bottom: 8px solid #bbb;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  font-family: "Verdana";
+}
+
+.sub__box h5,
+.mail__box h5 {
+  color: #2b2a29;
+  font-size: 12px;
+  text-transform: none;
+  margin: 0 0 10px;
+}
+
+.sub__box h4,
+.mail__box h4 {
+  color: #2b2a29;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  font-size: 12px;
+  margin: 0 0 10px;
+}
+
+.sub__box p,
+.mail__box p {
+  color: #2b2a29;
+  font-size: 10px;
+}
+
+.sub__box_inp {
+  width: 100%;
+  border: none;
+  outline: none;
+  float: left;
+  margin: 5px 0;
+  box-sizing: border-box;
+  padding: 0 10px;
+  font-size: 12px;
+  height: 37px;
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: 0 1px 2px rgba(31, 31, 31, 0.05);
+  -moz-box-shadow: 0 1px 2px rgba(31, 31, 31, 0.05);
+  box-shadow: 0 1px 2px rgba(31, 31, 31, 0.05);
+}
+
+.sub__box_text {
+  width: 100%;
+  height: 120px;
+  border: none;
+  outline: none;
+  float: left;
+  margin: 5px 0;
+  box-sizing: border-box;
+  font-size: 12px;
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: 0 1px 2px rgba(31, 31, 31, 0.05);
+  -moz-box-shadow: 0 1px 2px rgba(31, 31, 31, 0.05);
+  box-shadow: 0 1px 2px rgba(31, 31, 31, 0.05);
+  padding: 10px;
+}
+
+.sub__box_btn {
+  float: right;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 8px;
+  background-color: #a31ae9;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-top: 5px;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.sub__box_btn:hover {
+  background-color: #8412be;
+}
+
+.mail__wrap {
+  float: right;
 }
 
 .home__bg-map {
