@@ -6,3 +6,63 @@
 .content-wrapper .section-fran:before {
   z-index: 9;
 }
+
+.content-wrapper .section-form h3 {
+  text: #d3d3d3 36px;
+  font-weight: 400;
+  font-family: 'BebasNeueRegular';
+  letter-spacing: 2px;
+}
+
+.content-wrapper .section-form h6 {
+ 	width: 75%;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	color: #BDBDBD;
+}
+
+.section-form {	
+	&__box {
+		width: 355px;
+		margin: 0 auto;
+	}
+	&__field {
+		width: 100%;
+		margin-bottom: 10px;
+		font-size: 10px;
+		color: #FFF;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+		padding: 10px 15px;
+		background-color: rgba(255, 255, 255, .09);
+		border: 1px solid transparent;
+		outline: none;
+		@include transition(.2s);
+		&:focus {
+			background-color: rgba(255, 255, 255, .3);
+			border: 1px solid #9518D6;
+		}
+	}
+	&__text {
+		@extend .section-form__field;
+		resize: none;
+		height: 70px;
+	}
+	&__btn {
+		width: 100%; 
+		margin: 10px 0;
+		text: #fff uppercase 12px;
+		background-color: #A31AE9;
+		padding: 10px 0;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+		border: none;
+		outline: none;
+		@include transition(.2s);
+		&:hover {
+			background-color: darken(#A31AE9,15%);
+		}
+	}
+}

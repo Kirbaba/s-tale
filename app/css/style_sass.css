@@ -420,6 +420,81 @@ a:hover {
   z-index: 9;
 }
 
+.content-wrapper .section-form h3 {
+  color: #d3d3d3;
+  font-size: 36px;
+  font-weight: 400;
+  font-family: 'BebasNeueRegular';
+  letter-spacing: 2px;
+}
+
+.content-wrapper .section-form h6 {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #bdbdbd;
+}
+
+.section-form__box {
+  width: 355px;
+  margin: 0 auto;
+}
+
+.section-form__field,
+.section-form__text {
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 10px;
+  color: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  background-color: rgba(255, 255, 255, 0.09);
+  border: 1px solid transparent;
+  outline: none;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.section-form__field:focus,
+.section-form__text:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 1px solid #9518d6;
+}
+
+.section-form__text {
+  resize: none;
+  height: 70px;
+}
+
+.section-form__btn {
+  width: 100%;
+  margin: 10px 0;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  background-color: #a31ae9;
+  padding: 10px 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.section-form__btn:hover {
+  background-color: #7410a7;
+}
+
 .questionary__form_box {
   position: relative;
   float: left;
@@ -1701,5 +1776,9 @@ a:hover {
 
   .about-exhibition h3 {
     font-size: 40px;
+  }
+
+  .section-form__box {
+    width: 100%;
   }
 }
