@@ -41,6 +41,21 @@ jQuery(document).ready(function($) {
 
   });
 
+  jQuery(".services__carousel").owlCarousel({
+      slideSpeed : 1000,
+      paginationSpeed : 400,
+      touchDrag: true,
+      autoplayHoverPause: true,
+      items: [4],
+      itemsDesktop: [1280, 3],
+      itemsDesktopSmall: [1000, 2],
+      itemsMobile: [690, 1],
+      navigation: true,
+      navigationText : ["<span class='icon icon-slide-prev-w'></span>","<span class='icon icon-slide-next-w'></span>"],
+      pagination : false
+
+  });
+
 	jQuery(".franchise__carousel").owlCarousel({
       navigation : true, // Show next and prev buttons
         slideSpeed : 300,

@@ -49,6 +49,14 @@
     size: 79px;
     background-image: url('../img/icons/arr-slider.png');
   }
+  &-slide-prev-w {
+    size: 79px;
+    background-image: url('../img/icons/arrow_white_l.png');
+  }
+  &-slide-next-w {
+    size: 79px;
+    background-image: url('../img/icons/arrow_white_r.png');
+  }
   &-presentation-prev {
     width: 44px;
     height: 64px;
@@ -94,4 +102,15 @@
     }
     
   }
+}
+
+.caret_light {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px solid;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
 }

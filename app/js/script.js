@@ -28,6 +28,12 @@ jQuery(document).ready(function($) {
 		}
 
 	});
+
+	$(document).on('click', '.services__nav ul li', function(event) {
+		event.preventDefault();
+		var but_menu = $(this).children('ul');
+		but_menu.toggle();
+	});
 });
 
 
