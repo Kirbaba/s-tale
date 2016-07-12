@@ -127,3 +127,20 @@ a {
   width: 100%;
   position: relative;
 }
+
+.content-wrapper .section-review:after {
+  content: none;
+}
+
+.header-top {
+  float: left;
+  width: 100%;
+  position: relative;
+  height: 50px;
+}
+
+@media (min-width: 940px) {
+  .header-wrapper .header-top:before {
+    height: 50px;
+  }
+}

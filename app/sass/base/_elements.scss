@@ -114,3 +114,7 @@
     border-right: 4px solid transparent;
     border-left: 4px solid transparent;
 }
+
+.header-wrapper ul li a:before {
+  z-index: 99999!important;
+}

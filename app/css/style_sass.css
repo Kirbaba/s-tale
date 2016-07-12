@@ -140,6 +140,23 @@ a:hover {
   position: relative;
 }
 
+.content-wrapper .section-review:after {
+  content: none;
+}
+
+.header-top {
+  float: left;
+  width: 100%;
+  position: relative;
+  height: 50px;
+}
+
+@media (min-width: 940px) {
+  .header-wrapper .header-top:before {
+    height: 50px;
+  }
+}
+
 .icon {
   display: inline-block;
   -webkit-background-size: contain;
@@ -281,6 +298,10 @@ a:hover {
   border-top: 4px solid;
   border-right: 4px solid transparent;
   border-left: 4px solid transparent;
+}
+
+.header-wrapper ul li a:before {
+  z-index: 99999 !important;
 }
 
 .head-separator {
