@@ -1,0 +1,18 @@
+.header-wrapper, .header-wrapper .header-top {
+  z-index: 9!important;
+}
+
+.content-wrapper .section-form h3 {
+  text: #d3d3d3 36px;
+  font-weight: 400;
+  font-family: 'BebasNeueRegular';
+  letter-spacing: 1px;
+}
+
+.header-wrapper, .header-wrapper .header-top {
+	z-index: 9999999!important;
+}
+
+.header-wrapper .header-bottom {
+	z-index: 1!important;
+}

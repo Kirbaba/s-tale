@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'BebasNeueRegular';
+  src: url("../fonts/BebasNeueRegular.eot");
+  src: url("../fonts/BebasNeueRegular.eot") format("embedded-opentype"), url("../fonts/BebasNeueRegular.woff2") format("woff2"), url("../fonts/BebasNeueRegular.woff") format("woff"), url("../fonts/BebasNeueRegular.ttf") format("truetype"), url("../fonts/BebasNeueRegular.svg#bebasNeueRegular") format("svg");
+}
+
 .block-magenta {
   float: left;
   position: relative;
@@ -2076,6 +2082,34 @@ a:hover {
 
   .services {
     margin-top: 50px;
+  }
+
+  .header-wrapper .header-bottom {
+    top: 100px;
+  }
+
+  .header-wrapper .header-bottom--onScroll {
+    top: 0;
+  }
+
+  .sub__box,
+  .mail__box {
+    left: 0;
+  }
+
+  .sub__box:before,
+  .mail__box:before {
+    left: 15px;
+  }
+
+  .mail__box {
+    right: 0;
+    left: initial;
+  }
+
+  .mail__box:before {
+    right: 15px;
+    left: initial;
   }
 }
 

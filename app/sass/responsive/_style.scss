@@ -194,6 +194,26 @@
 	.services {
 		margin-top: 50px;
 	}
+	.header-wrapper .header-bottom {
+		top: 100px;
+	}
+	.header-wrapper .header-bottom--onScroll {
+		top: 0;
+	}
+	.sub__box {
+		left: 0;
+		&:before {
+			left: 15px;
+		}
+	}
+	.mail__box {
+		right: 0;
+		left: initial;
+		&:before {
+			right: 15px;
+			left: initial;
+		}
+	}
 }
 
 @media only screen and (max-width: 500px) {
