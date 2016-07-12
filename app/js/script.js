@@ -29,13 +29,14 @@ jQuery(document).ready(function($) {
 
 	});
 
-	$(document).on('click', '.services__nav ul li', function(event) {
-		var but_menu = $(this).children('ul');
-		if (but_menu.length != 0) {
-			event.preventDefault();
+	$(document).on('click', '.services__nav_dropped', function(event) {
+		var but_menu = $(this).parent().children('ul');
+		if (but_menu.length != 0) {			
 			but_menu.toggle();
-		}		
-	});
+		}	
+		return false;
+		
+	});	
 });
 
 
